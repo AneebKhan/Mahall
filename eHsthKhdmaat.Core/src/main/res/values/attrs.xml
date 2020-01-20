@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ITFGifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+
+    <attr name="fontName" format="string" />
+    <attr name="localizedText" format="string" />
+    <attr name="iconBeforeText" format="string" />
+    <attr name="iconAfterText" format="string" />
+    <attr name="fontColor" format="color" />
+    <attr name="localizedHint" format="string" />
+    <attr name="localizedImeActionLabel" format="string" />
+    <attr name="localizedError" format="string" />
+    <attr name="errorText" format="string" />
+
+    <attr name="specialInputType" format="enum">
+        <enum name="numeric" value="1" />
+        <enum name="character" value="2" />
+        <enum name="nonArabic" value="3" />
+        <enum name="specialAlphabetical" value="4" />
+        <enum name="alphabetical" value="5" />
+        <enum name="alphaNumeric" value="6" />
+        <enum name="address" value="7" />
+        <enum name="username" value="8" />
+        <enum name="cifNumber" value="9" />
+        <enum name="password" value="10" />
+    </attr>
+
+    <attr name="ITFFontStyle" format="enum">
+        <enum name="normal" value="1" />
+        <enum name="bold" value="2" />
+        <enum name="italic" value="3" />
+        <enum name="boldItalic" value="3" />
+    </attr>
+
+    <declare-styleable name="ITFTextView">
+        <attr name="fontName" />
+        <attr name="localizedText" />
+        <attr name="iconBeforeText" />
+        <attr name="iconAfterText"  />
+        <attr name="fontColor" />
+        <attr name="ITFFontStyle" />
+    </declare-styleable>
+
+    <declare-styleable name="ITFButton">
+        <attr name="fontName" />
+        <attr name="localizedText" />
+        <attr name="iconBeforeText" />
+        <attr name="iconAfterText"  />
+        <attr name="fontColor" />
+        <attr name="ITFFontStyle" />
+    </declare-styleable>
+
+    <declare-styleable name="ITFImageView">
+        <attr name="fontName" />
+        <attr name="localizedText" />
+        <attr name="iconBeforeText" />
+        <attr name="iconAfterText"  />
+        <attr name="fontColor" />
+    </declare-styleable>
+
+    <declare-styleable name="ITFEditText">
+        <attr name="fontName" />
+        <attr name="fontColor" />
+        <attr name="ITFFontStyle" />
+        <attr name="localizedHint" />
+        <attr name="localizedImeActionLabel" />
+        <attr name="specialInputType" />
+        <attr name="localizedError" />
+        <attr name="errorText" />
+    </declare-styleable>
+
+    <declare-styleable name="ITFCheckBox">
+        <attr name="fontName" />
+        <attr name="localizedText" />
+        <attr name="iconBeforeText" />
+        <attr name="iconAfterText"  />
+        <attr name="fontColor" />
+    </declare-styleable>
+
+    <declare-styleable name="ITFRadioBox">
+        <attr name="fontName" />
+        <attr name="localizedText" />
+        <attr name="iconBeforeText" />
+        <attr name="iconAfterText"  />
+        <attr name="fontColor" />
+    </declare-styleable>
+
+    <declare-styleable name="ITFCurrencyEditText">
+        <attr name="fontName" />
+        <attr name="fontColor" />
+        <attr name="localizedHint" />
+        <attr name="countryCode" />
+        <attr name="localizedImeActionLabel" />
+        <attr name="specialInputType" />
+        <attr name="localizedError" />
+        <attr name="errorText" />
+    </declare-styleable>
+
+    <declare-styleable name="ITFDrawerLayout">
+        <attr name="customBehavior" format="boolean" />
+        <attr name="viewScale" format="float" />
+        <attr name="viewScrimColor" format="color" />
+        <attr name="viewElevation" format="dimension" />
+        <attr name="drawerElevation" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ITFCurrencyEditText2">
+        <attr name="groupDivider" format="string" />
+        <attr name="monetaryDivider" format="string" />
+        <attr name="locale" format="string" />
+        <attr name="showSymbol" format="boolean" />
+    </declare-styleable>
+
+    <!-- CircularImageView Custom Styling -->
+    <declare-styleable name="CircularImageView">
+
+        <!-- Whether or not to draw a circular border around the image. -->
+        <attr name="civ_border" format="boolean"/>
+        <!-- The color of the border draw around the image. (if enabled) -->
+        <attr name="civ_borderColor" format="color"/>
+        <!-- Makes the border this pixels wide. (if enabled) -->
+        <attr name="civ_borderWidth" format="dimension"/>
+        <!-- Whether or not to draw a selector on this view upon touch events. -->
+        <attr name="civ_selector" format="boolean"/>
+        <!-- The color of the selector draw on top of the image upon touch events. (if enabled) -->
+        <attr name="civ_selectorColor" format="color"/>
+        <!-- The color of the selector stroke drawn around the image upon touch events. Be sure to provide some opacity. (if enabled) -->
+        <attr name="civ_selectorStrokeColor" format="color"/>
+        <!-- The selector stroke drawn around the image upon touch events this pixels wide. (if enabled) -->
+        <attr name="civ_selectorStrokeWidth" format="dimension"/>
+        <!-- Whether or not to draw a shadow around your circular image. -->
+        <attr name="civ_shadow" format="boolean"/>
+        <!-- The radius for the shadow to extend to. (if enabled) -->
+        <attr name="civ_shadowRadius" format="float"/>
+        <!-- Horizontal shadow offset. (if enabled) -->
+        <attr name="civ_shadowDx" format="float"/>
+        <!-- Vertical shadow offset. (if enabled) -->
+        <attr name="civ_shadowDy" format="float"/>
+        <!-- The color of the shadow drawn around your circular image. (if enabled) -->
+        <attr name="civ_shadowColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircularImageViewStyle">
+        <attr name="circularImageViewDefault" format="reference"/>
+    </declare-styleable>
+
+</resources>

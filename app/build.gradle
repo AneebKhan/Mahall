@@ -1,0 +1,78 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "itf.ehsthkhdmaat.mahall"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0.0.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.annotation:annotation:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    api 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0-alpha1'
+    //SDP - a scalable size unit with the screen size.
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    //SSP - a scalable size unit for texts
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+    //Render After Effects animations natively on Android
+    implementation 'com.airbnb.android:lottie:2.5.5'
+    // Bind Android views and callbacks to fields and methods.
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+    //Gson
+    implementation 'com.google.code.gson:gson:2.7'
+
+    implementation project(':eHsthKhdmaat.Core')
+    implementation project(':eHsthKhdmaat.Infrastructure')
+    implementation project(':eHsthKhdmaat.BuildingBlocks')
+
+    //implementation 'com.pkmmte.view:circularimageview:1.1'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+
+    // Map
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+
+
+}

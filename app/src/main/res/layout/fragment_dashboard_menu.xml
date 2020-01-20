@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:id="@+id/sliderContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_alignParentTop="true">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/layoutDots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:orientation="horizontal"></LinearLayout>
+
+        <directives.ITFButton
+            android:id="@+id/btnFeaturedMore"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:text="@string/dashboard_featured_btn_more"
+            android:background="@drawable/border_curved_with_shadow_white"
+            app:fontColor="@color/uiPlaceGreen"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_10sdp"
+            />
+
+    </RelativeLayout>
+
+    <directives.ITFTextView
+        android:id="@+id/txtCatHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dashboard_featured_category_heading"
+        app:fontColor="@color/Black"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14ssp"
+
+        android:layout_below="@+id/sliderContainer"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        />
+
+    <directives.ITFRecyclerView
+        android:id="@+id/categoryRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCatHeading"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:nestedScrollingEnabled="false" />
+
+    <directives.ITFTextView
+        android:id="@+id/txtTopVenuesHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dashboard_featured_top_venues_heading"
+        app:fontColor="@color/Black"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14ssp"
+
+        android:layout_below="@+id/categoryRecyclerView"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        />
+
+    <directives.ITFRecyclerView
+        android:id="@+id/menuRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTopVenuesHeading"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:nestedScrollingEnabled="false"
+        />
+
+</RelativeLayout>

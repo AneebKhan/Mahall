@@ -1,0 +1,115 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 28
+
+
+
+    defaultConfig {
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        debug {
+            //buildConfigField("String", "URL_BASE",  '"http://venue.phatbooski-services.com/api/v1/"')
+            buildConfigField("String", "URL_BASE",  '"http://test.phatbooski-services.com/"')
+            buildConfigField("String", "URL_BASE_CORE",  '"http://core.phatbooski-services.com/api/v1/"')
+            buildConfigField("String", "URL_BASE_VENUE",  '"http://venue.phatbooski-services.com/api/v1/"')
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "URL_BASE", '"http://venue.phatbooski-services.com/api/v1/"')
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //Support libraries
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:gridlayout-v7:28.0.0'
+    implementation 'com.android.support:support-annotations:28.0.0'
+
+    //Gson
+    implementation 'com.google.code.gson:gson:2.6.2'
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.6.0'
+
+    //newly added
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+
+
+
+    //firebase and tag manager libraries
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+    implementation 'com.google.android.gms:play-services-tagmanager:16.0.8'
+
+    //room com.itf.phatbooski.database library
+    implementation "android.arch.persistence.room:runtime:1.1.1"
+
+    // room annotation process
+    annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
+
+    // cardview library
+    implementation "com.android.support:cardview-v7:28.0.0"
+
+    //CropImage camera view
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.+'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+
+    // Glide Transformation
+    implementation 'jp.wasabeef:glide-transformations:3.3.0'
+
+    ///Recyclerview divider
+    // Android library providing simple way to control divider items (ItemDecoration) of RecyclerView
+    implementation 'com.yqritc:recyclerview-flexibledivider:1.4.0'
+
+    //The Most Powerful Swipe Layout!
+    implementation "com.daimajia.swipelayout:library:1.2.0@aar"
+
+    //location services
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+
+
+//    // firebase cloud messaging
+//    implementation 'com.google.firebase:firebase-messaging:17.5.0'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //Adding infrastructure module
+    implementation project(path: ':eHsthKhdmaat.Infrastructure')
+
+    // Bind Android views and callbacks to fields and methods.
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //SDP - a scalable size unit with the screen size.
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    //SSP - a scalable size unit for texts
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+}

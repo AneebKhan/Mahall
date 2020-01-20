@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/uiPlaceGreen</color>
+    <color name="colorPrimaryDark">@color/uiPlaceGreen</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="backgroundColor">#A020F0</color>
+    <color name="drawerMenuBackColor">#CC000000</color>
+
+    <color name="White">#FFFFFF</color>
+    <color name="whiteSmoke">#F5F5F5</color>
+    <color name="Black">#000000</color>
+    <color name="Gray">#808080</color>
+    <color name="lightGrey">#C5C5C5</color>
+    <color name="BorderGray">#B1BCBE</color>
+    <color name="gradientGrey">#DADADA</color>
+    <color name="Blue">#008AD1</color>
+    <color name="Purple">#A020F0</color>
+    <color name="Red">#E30613</color>
+    <color name="Green">#008000</color>
+    <color name="Orange">#E84E1B</color>
+
+    <color name="lightBlue">#139DDB</color>
+    <color name="darkBlue">#114473</color>
+    <!--<color name="lightGreen">#499538</color>-->
+    <color name="lightGreen">@color/uiPlaceGreen</color>
+    <color name="uiPlaceGreen">#54D3C2</color>
+    <color name="darkGreen">#2B5921</color>
+
+    <color name="selected_nav_item_bg_color">#E30613</color>
+
+    <array name="array_dot_active">
+        <item>@color/Blue</item>
+        <item>@color/Blue</item>
+        <item>@color/Blue</item>
+        <item>@color/Blue</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/lightGreen</item>
+        <item>@color/lightGreen</item>
+        <item>@color/lightGreen</item>
+        <item>@color/lightGreen</item>
+    </array>
+</resources>

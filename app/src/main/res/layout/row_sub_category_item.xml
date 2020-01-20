@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_80sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@drawable/border_curved_white"
+    android:orientation="vertical">
+
+    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imgCatImage"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/banner_image"
+        app:riv_border_color="@color/colorTransparent"
+        app:riv_border_width="@dimen/_1sdp"
+        app:riv_corner_radius="@dimen/_10sdp"
+        app:riv_corner_radius_bottom_left="@dimen/_10sdp"
+        app:riv_corner_radius_bottom_right="@dimen/_10sdp"
+        app:riv_corner_radius_top_left="@dimen/_10sdp"
+        app:riv_corner_radius_top_right="@dimen/_10sdp"
+        app:riv_mutate_background="true"
+        app:riv_oval="false"
+        app:riv_tile_mode="clamp" />
+
+    <RelativeLayout
+        android:id="@+id/rlCatContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgCatImage"
+        android:layout_alignBottom="@+id/imgCatImage"
+        android:layout_toRightOf="@+id/imgCatImage"
+        android:layout_marginStart="@dimen/_14sdp"
+        >
+
+    <directives.ITFTextView
+        android:id="@+id/tvCatName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sub Category Name"
+        app:fontColor="@color/Black"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_12ssp"
+        />
+
+    <RatingBar
+        android:id="@+id/rbCatRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/RatingBar"
+        android:layout_centerVertical="true"
+        android:rating="0"
+        android:stepSize="1"
+        android:numStars="5"
+        android:progressTint="@color/colorPrimary"
+        />
+
+    <directives.ITFTextView
+        android:id="@+id/tvDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="55 KM"
+        app:fontColor="@color/Black"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:textSize="@dimen/_12ssp"
+        />
+
+    </RelativeLayout>
+
+    <directives.ITFImageView
+        android:id="@+id/imgMarkFavourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_favorite_border_black_24dp"
+        android:clickable="true"
+        android:layout_margin="@dimen/_6sdp"
+        />
+
+
+
+
+</RelativeLayout>

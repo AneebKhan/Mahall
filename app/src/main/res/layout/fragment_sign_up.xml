@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteSmoke"
+    >
+
+    <directives.ITFTextView
+        android:id="@+id/txtHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_heading_text"
+        android:textSize="@dimen/_22ssp"
+        android:textStyle="normal"
+        app:fontColor="@color/uiPlaceGreen"
+        android:fontFamily="@string/font_helvetica_narrow_bold"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <directives.ITFEditText
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHeading"
+        android:hint="@string/sign_up_hint_username"
+        android:maxLines="1"
+        app:fontColor="@color/Black"
+        android:textSize="@dimen/_12ssp"
+        android:background="@drawable/border_curved_with_shadow_white"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        />
+
+    <directives.ITFEditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUsername"
+        android:hint="@string/sign_up_hint_email"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        app:fontColor="@color/Black"
+        android:textSize="@dimen/_12ssp"
+        android:background="@drawable/border_curved_with_shadow_white"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        />
+
+    <directives.ITFEditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtEmail"
+        android:hint="@string/sign_up_hint_password"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        app:fontColor="@color/Black"
+        android:textSize="@dimen/_12ssp"
+        android:background="@drawable/border_curved_with_shadow_white"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        />
+
+    <directives.ITFEditText
+        android:id="@+id/edtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPassword"
+        android:hint="@string/sign_up_hint_phone"
+        android:maxLines="1"
+        android:inputType="phone"
+        app:fontColor="@color/Black"
+        android:textSize="@dimen/_12ssp"
+        android:background="@drawable/border_curved_with_shadow_white"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        />
+
+    <directives.ITFButton
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPhone"
+        android:text="@string/sign_up_btn_sign_up"
+        android:textAllCaps="false"
+        android:maxLines="1"
+        app:fontColor="@color/White"
+        android:textSize="@dimen/_12ssp"
+        android:background="@drawable/border_curved_with_shadow_green"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        />
+
+    <directives.ITFTextView
+        android:id="@+id/txtAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_text_agree"
+        android:textSize="@dimen/_12ssp"
+        android:layout_below="@+id/btnSignUp"
+        app:fontColor="@color/Gray"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        />
+
+    <LinearLayout
+        android:id="@+id/llLoginContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_80sdp"
+        >
+
+        <directives.ITFTextView
+            android:id="@+id/txtAlreadyAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_text_already_account"
+            android:textSize="@dimen/_12ssp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textStyle="normal"
+            app:fontColor="@color/Black"
+            />
+
+        <directives.ITFTextView
+            android:id="@+id/txtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_text_login"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:fontColor="@color/uiPlaceGreen"
+            />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

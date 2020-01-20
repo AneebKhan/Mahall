@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">Mahall</string>
+
+    <string name="top_app_bar_label_title">Top app bar</string>
+    <string name="app_bar_menu_share">Share</string>
+    <string name="app_bar_menu_search">Search</string>
+    <string name="app_bar_menu_bookmark">Bookmark</string>
+
+    <!--region page titles start-->
+    <string name="features_screen">Dashboard</string>
+    <string name="venue_main_screen">Venues</string>
+    <string name="venue_sub_category">Category</string>
+    <!--endregion page titles start-->
+
+    <!--region dashboard screen -->
+    <string name="dashboard_featured_btn_more">More</string>
+    <string name="dashboard_featured_category_heading">Categories</string>
+    <string name="dashboard_featured_top_venues_heading">Top rated venues</string>
+    <!--endregion dashboard screen -->
+
+    <!--region categories view spinner array -->
+    <string-array name="array_cat_views">
+        <item>List View</item>
+        <item>Grid View</item>
+        <item>Map View</item>
+    </string-array>
+    <!--endregion categories view spinner array -->
+
+    <!--region sub category page -->
+    <string name="sub_cat_search_hint_text">Search</string>
+    <string name="title_activity_maps">Map</string>
+    <!--endregion sub category page -->
+
+    <!--region sub category details page -->
+    <string name="sub_cat_detail_info_heading">Venue General Info:</string>
+    <string name="sub_cat_detail_venue_name">Venue Name:</string>
+    <string name="sub_cat_detail_venue_detail">Venue Detail:</string>
+    <string name="sub_cat_detail_venue_website">Venue Website:</string>
+    <string name="sub_cat_detail_venue_contact">Contact Number:</string>
+    <string name="sub_cat_detail_venue_address">Address:</string>
+    <string name="sub_cat_detail_show_direction">Show Directions on Map</string>
+    <string name="sub_cat_detail_venue_offers">Venue Offers:</string>
+    <string name="sub_cat_detail_venue_reviews">Venue Reviews:</string>
+    <string name="sub_cat_detail_venue_write_review">Write a Review</string>
+    <!--endregion sub category details page -->
+
+    <!--region navigation items -->
+    <string name="nav_home">Home</string>
+    <string name="nav_favourite">Favourite</string>
+    <string name="nav_register">Register</string>
+    <!--endregion navigation items -->
+
+    <!-- region bottom sheet offers -->
+    <string name="bottom_sheet_offer_contact">Contact Number:</string>
+    <string name="bottom_sheet_offer_website">Website:</string>
+    <!-- endregion bottom sheet offers -->
+
+    <!-- region dialog write review offers -->
+    <string name="dialog_write_review_heading">YOUR REVIEW &amp; RATING</string>
+    <string name="dialog_write_review_hint">Write reviews in this text area</string>
+    <string name="dialog_write_review_btn_submit">Submit</string>
+    <string name="dialog_write_review_text_empty">Please enter a valid review.</string>
+    <!-- endregion dialog write review offers -->
+
+    <!-- region snack bar -->
+    <string name="snack_bar_text_venue_added">Venue added to favourite list</string>
+    <string name="snack_bar_text_venue_removed">Venue removed from favourite list</string>
+    <string name="snack_bar_btn_favourite_view">View</string>
+    <!-- endregion snack bar -->
+
+    <!-- region login screen -->
+    <string name="login_main_heading_text">Login in to your \naccount</string>
+    <string name="login_text_dont_have">Don\'t have an account?</string>
+    <string name="login_text_sign_up">Sign up</string>
+    <string name="login_forget_password">Forgot?</string>
+    <string name="login_error_invalid_password">This password is too short</string>
+    <string name="login_error_field_required">This field is required</string>
+    <!-- endregion login screen -->
+
+    <!-- region forgot password screen -->
+    <string name="forgot_heading_text">Forgot password</string>
+    <string name="forgot_details_text">Please enter your email to receive a link \nto create a new password via email.</string>
+    <string name="forgot_send_button">Send</string>
+    <!-- endregion forgot password screen -->
+
+    <!-- region sign up screen -->
+    <string name="sign_up_heading_text">Create your \naccount</string>
+    <string name="sign_up_hint_username">Username</string>
+    <string name="sign_up_hint_email">Email</string>
+    <string name="sign_up_hint_password">Password</string>
+    <string name="sign_up_hint_phone">Phone</string>
+    <string name="sign_up_btn_sign_up">Sign up</string>
+    <string name="sign_up_text_agree">By clicking Sign up you agree to the our \nTerms and Conditions</string>
+    <string name="sign_up_text_already_account">Already an account?</string>
+    <string name="sign_up_text_login">Log in</string>
+    <!-- endregion forgot password screen -->
+
+    <!-- region dialog write review offers -->
+    <string name="dialog_update_btn_cancel">Cancel</string>
+    <string name="dialog_update_btn_update">Update</string>
+    <string name="dialog_update_text_heading">Please update to newer version.</string>
+    <!-- endregion dialog write review offers -->
+
+    <!-- region country select screen -->
+    <string name="country_main_heading_text">Please select your \ncountry</string>
+    <string name="country_submit_btn">Submit</string>
+    <string name="country_enter_country_hint">Please enter country name</string>
+    <!-- endregion country select screen -->
+
+    <string name="google_maps_key">AIzaSyDPpWXZJtrIfz-60C3b05zGSUCKc9j45c0</string>
+    <string name="google_maps_key_2">AIzaSyDFRCnG_RceB5zSVWkP7HJFoTNR3j4kvpQ</string>
+    <string name="google_maps_key_release">AIzaSyBDy1yhi2gmoOVowXUAnNf4-gATUwpNUlI</string>
+
+    <string name="email_pattern_validation">^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,6}$</string>
+
+</resources>

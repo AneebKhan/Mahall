@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_offer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <directives.ITFImageView
+        android:id="@+id/close_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/_10sdp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/icon_filled_close" />
+
+
+    <directives.ITFImageView
+        android:id="@+id/imgOffer"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_96sdp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_dummy" />
+
+    <directives.ITFTextView
+        android:id="@+id/tvOfferName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgOffer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="Offer Name"
+        android:textSize="@dimen/_14ssp"
+        app:fontColor="@color/Black" />
+
+    <directives.ITFTextView
+        android:id="@+id/tvOfferValidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvOfferName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Offer Validity"
+        android:textSize="@dimen/_12ssp"
+        app:fontColor="@color/Gray" />
+
+    <directives.ITFTextView
+        android:id="@+id/tvOfferDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvOfferValidity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Offer Details"
+        android:textSize="@dimen/_12ssp"
+        android:gravity="center"
+        app:fontColor="@color/Gray" />
+
+
+    <directives.ITFTextView
+        android:id="@+id/tvContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bottom_sheet_offer_contact"
+        android:layout_below="@+id/tvOfferDetails"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_12ssp"
+        app:fontColor="@color/Gray"
+
+        />
+
+
+    <directives.ITFTextView
+        android:id="@+id/tvWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bottom_sheet_offer_contact"
+        android:textSize="@dimen/_12ssp"
+        app:fontColor="@color/Gray"
+        android:layout_below="@+id/tvContact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
+
+
+</RelativeLayout>

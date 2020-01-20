@@ -1,0 +1,1 @@
+include ':app', ':eHsthKhdmaat.Core', ':eHsthKhdmaat.Infrastructure', ':eHsthKhdmaat.BuildingBlocks'

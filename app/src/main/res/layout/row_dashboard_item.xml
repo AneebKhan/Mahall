@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:background="@color/whiteSmoke"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlCatContainer"
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/selector_gradient_grey">
+
+        <directives.ITFTextView
+            android:id="@+id/tvCatName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="TextView"
+            android:textSize="@dimen/_16ssp"
+            app:fontColor="@color/Black" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewCatContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/rlCatContainer"
+        android:background="@color/whiteSmoke" />
+
+    <!--<com.pkmmte.view.CircularImageView
+        android:id="@+id/viewCatImage"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_alignLeft="@+id/viewCatContainer"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:src="@drawable/icon_camera"
+
+        app:border="true"
+        app:border_color="@color/White"
+        app:border_width="@dimen/_4sdp"
+        app:shadow="false"
+        />-->
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/viewCatImage"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_alignLeft="@+id/viewCatContainer"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+
+        app:civ_border_color="@color/darkBlue"
+        app:civ_border_width="@dimen/_2sdp"
+        app:civ_circle_background_color="@color/White" />
+
+
+</RelativeLayout>

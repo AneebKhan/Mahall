@@ -1,0 +1,59 @@
+<resources>
+    <!-- region FONT NAMES -->
+
+    <!-- region font awsome -->
+    <string name="font_awsome">fonts/fontawesome-webfont.ttf</string>
+    <!-- endregion font awsome -->
+
+    <!-- region roboto -->
+    <string name="font_roboto_black" translatable="false">fonts/roboto/Roboto-Black.ttf</string>
+    <string name="font_roboto_black_italic" translatable="false">fonts/roboto/Roboto-BlackItalic.ttf</string>
+    <string name="font_roboto_bold" translatable="false">fonts/roboto/Roboto-Bold.ttf</string>
+    <string name="font_roboto_bold_italic" translatable="false">fonts/roboto/Roboto-BoldItalic.ttf</string>
+    <string name="font_roboto_italic" translatable="false">fonts/roboto/Roboto-Italic.ttf</string>
+    <string name="font_roboto_light" translatable="false">fonts/roboto/Roboto-Light.ttf</string>
+    <string name="font_roboto_light_italic" translatable="false">fonts/roboto/Roboto-LightItalic.ttf</string>
+    <string name="font_roboto_medium" translatable="false">fonts/roboto/Roboto-Medium.ttf</string>
+    <string name="font_roboto_medium_italic" translatable="false">fonts/roboto/Roboto-MediumItalic.ttf</string>
+    <string name="font_roboto_regular" translatable="false">fonts/roboto/Roboto-Regular.ttf</string>
+    <string name="font_roboto_thin" translatable="false">fonts/roboto/Roboto-Thin.ttf</string>
+    <string name="font_roboto_thin_italic" translatable="false">fonts/roboto/Roboto-ThinItalic.ttf</string>
+    <!-- endregion roboto -->
+
+
+    <!-- region helvetica-->
+    <string name="font_helvetica_black" translatable="false">fonts/helvetica/Helvetica-Black.otf</string>
+    <string name="font_helvetica_narrow" translatable="false">fonts/helvetica/Helvetica-Narrow.otf</string>
+    <string name="font_helvetica_narrow_bold" translatable="false">fonts/helvetica/Helvetica-Narrow-Bold.otf</string>
+    <string name="font_helvetica_narrow_bolditalic" translatable="false">fonts/helvetica/Helvetica-Narrow-BoldItalic.otf</string>
+    <string name="font_helvetica_narrow_italic" translatable="false">fonts/helvetica/Helvetica-Narrow-Italic.otf</string>
+    <string name="font_helveticaneueltpro_bd" translatable="false">fonts/helvetica/HelveticaNeueLTPro-Bd.otf</string>
+    <string name="font_helveticaneueltpro_bdcn_0" translatable="false">fonts/helvetica/HelveticaNeueLTPro-BdCn_0.otf</string>
+    <string name="font_helveticaneueltpro_blkcn" translatable="false">fonts/helvetica/HelveticaNeueLTPro-BlkCn.otf</string>
+    <string name="font_helveticaneuelltpro_cn" translatable="false">fonts/helvetica/HELVETICANEUELTPRO-CN.otf</string>
+    <string name="font_helveticaneueltpro_hv" translatable="false">fonts/helvetica/HelveticaNeueLTPro-Hv.otf</string>
+    <string name="font_helveticaneueltpro_hvcn" translatable="false">fonts/helvetica/HelveticaNeueLTPro-HvCn.otf</string>
+    <string name="font_helveticaneueltpro_lt" translatable="false">fonts/helvetica/HelveticaNeueLTPro-Lt.otf</string>
+    <string name="font_helveticaneueltpro_mdcn" translatable="false">fonts/helvetica/HelveticaNeueLTPro-MdCn.otf</string>
+    <string name="font_helveticaneueltpro_roman" translatable="false">fonts/helvetica/HelveticaNeueLTPro-Roman.otf</string>
+    <string name="font_helveticaneueltstd_bdcn" translatable="false">fonts/helvetica/HelveticaNeueLTStd-BdCn.otf</string>
+    <string name="font_helveticaneueltstd_cn" translatable="false">fonts/helvetica/HelveticaNeueLTStd-Cn.otf</string>
+    <string name="font_helveticaneueltstd_hvcn" translatable="false">fonts/helvetica/HelveticaNeueLTStd-HvCn.otf</string>
+    <string name="font_helveticaneueltstd_mdcn2" translatable="false">fonts/helvetica/HelveticaNeueLTStd-MdCn2.otf</string>
+    <string name="font_helveticaneueltstd_mdcn" translatable="false">fonts/helvetica/HelveticaNeueLTStd-MdCn.otf</string>
+    <!-- endregion helvetica-->
+
+    <!-- endregion FONT NAMES -->
+
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+
+    <string name="disable_feature_demo">This feature is disabled for demo environment.</string>
+
+    <string name="network_connectivity_issue">Network connectivity issue.</string>
+    <string name="no_internet_error">No Internet Connection.</string>
+    <string name="error_transaction_not_authentic">UnAuthenticated Transaction</string>
+    <string name="error_authentication">Please signup to perform this action.</string>
+    <string name="btn_login">Login</string>
+
+</resources>

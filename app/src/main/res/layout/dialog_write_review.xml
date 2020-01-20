@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_curved"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <directives.ITFTextView
+            android:id="@+id/txtHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/dialog_write_review_heading"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:fontColor="@color/Black" />
+
+        <directives.ITFEditText
+            android:id="@+id/edtReview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:hint="@string/dialog_write_review_hint"
+            android:textColorHint="@color/Gray"
+            app:fontColor="@color/Black"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:maxLines="3"
+            android:gravity="top|start"
+            android:background="@drawable/border_curved"
+            />
+
+        <RatingBar
+            android:id="@+id/rbReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            style="@style/RatingBar"
+            android:isIndicator="false"
+            android:layout_centerVertical="true"
+            android:rating="0"
+            android:stepSize="0.5"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimary"
+            />
+
+        <directives.ITFButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:fontColor="@color/Black"
+            android:background="@drawable/border_curved"
+            android:text="@string/dialog_write_review_btn_submit"
+            />
+
+    </LinearLayout>
+
+    <directives.ITFImageView
+        android:id="@+id/imgClose"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/close_icon" />
+
+</RelativeLayout>
